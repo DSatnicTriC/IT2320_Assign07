@@ -1,0 +1,27 @@
+﻿.menu { 
+	font-weight: bold;
+	float: left;
+	width: 160px;
+}
+.menu ul {     margin-top: 0;    list-style-type: none;
+}.menu li {     padding-bottom: 10px;
+}
+.menu a { 
+    text-decoration: none; 
+}.nonMenu {    margin-left: 200px;}
+h2 { 
+    padding: 10px;
+}
+@media only screen and (max-width: 768px) {
+	body { margin: 0; }
+	.menu { float: none;  width: auto; }
+	.menu ul { text-align: center; margin-left: -55px; }
+	.menu li { padding-left: 15px; display: inline; }
+    .nonMenu { margin-left: 0; }
+}
+@media only screen and (max-width: 480px) {
+    h2 { padding : 0 }
+	body { margin: 0; }	
+	.menu li { display: block; border-bottom: 3px double black; margin: 0; }
+    .nonMenu { padding-top: 5px; margin: 0; }
+}
